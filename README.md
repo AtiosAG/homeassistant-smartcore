@@ -64,8 +64,17 @@ low-level and are described as *advanced* below.
 
 ## Install (HACS custom repo)
 
-Add this repo as a custom repository (type: Integration), install, restart,
-then **Settings → Devices & Services → Add → Atios SmartCore** and enter the IP.
+1. Add this repo to HACS as a custom repository (type: **Integration**) and
+   install it.
+
+   [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AtiosAG&repository=homeassistant-smartcore&category=integration)
+
+2. Restart Home Assistant.
+3. Add the integration and enter the SmartCore's IP address.
+
+   [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=atios)
+
+   Or manually: **Settings → Devices & Services → Add → Atios SmartCore**.
 
 To show the SmartCore web UI in the sidebar: **Settings → Devices & Services → Atios SmartCore → Configure**. If the panel is blank, check the HA log — the integration probes for `X-Frame-Options`/CSP/mixed-content and logs the exact reason.
 
