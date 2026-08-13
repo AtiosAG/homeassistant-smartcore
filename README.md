@@ -6,10 +6,11 @@ The [Atios SmartCore](https://atios.ch/products/smartcore) is a Matter-certified
 controller with 12 built-in IOs and a DALI-2 Master. It's powered by 24V DC or
 via PoE, and also powers the DALI bus.
 
-## Standard setup: Matter (no integration needed)
+## Standard setup: Matter (this integration is not needed)
 
 Because the SmartCore is a certified Matter device, it pairs directly with Home
-Assistant. Most users need only this:
+Assistant. Most users therefore should follow the documentation provided with
+the device, which in short is:
 
 1. Visit [setup.atios.ch](https://setup.atios.ch/) to find your SmartCore on
    your local network, and connect to its local web interface
@@ -28,14 +29,15 @@ This integration gives you **raw DALI access** from Home Assistant: send and
 receive arbitrary DALI commands, for example to process live DALI-2 events
 from sensors that the SmartCore and its Matter integration do not support yet.
 
-It also provides DALI scene recall, a bus monitor, per-address lights, a
-firmware update entity, and the SmartCore web UI as a sidebar panel. Fully
-local (push over LAN), no cloud, no external Python dependencies. Works
-standalone or alongside a Matter-paired SmartCore.
+Examples provided for controlling the lights (control gear) and receiving
+values from DALI-2 sensors (control devices), a general DALI monitor, a DALI
+scene recall, a firmware update entity, and the SmartCore web UI as a sidebar
+panel. Fully local (push over LAN), no cloud, no external Python dependencies.
+Works standalone or alongside a Matter-paired SmartCore.
 
 ## Installation
 
-**Step 1: Install HACS** (one-time; skip if you already have it in your sidebar)
+**Step 1: Install HACS** (skip if you already have it)
 
 1. Go to **Settings → Apps → App store**, open the **⋮** menu (top right) →
    **Repositories**, and add `https://github.com/hacs/addons`. Then install
